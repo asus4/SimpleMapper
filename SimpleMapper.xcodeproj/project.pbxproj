@@ -1,0 +1,614 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7813622118DE81B10033FE85 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7813622018DE81B10033FE85 /* Cocoa.framework */; };
+		7813622B18DE81B10033FE85 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7813622918DE81B10033FE85 /* InfoPlist.strings */; };
+		7813622D18DE81B10033FE85 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7813622C18DE81B10033FE85 /* main.m */; };
+		7813623118DE81B10033FE85 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 7813622F18DE81B10033FE85 /* Credits.rtf */; };
+		7813623418DE81B10033FE85 /* PMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7813623318DE81B10033FE85 /* PMAppDelegate.m */; };
+		7813623718DE81B10033FE85 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7813623518DE81B10033FE85 /* MainMenu.xib */; };
+		7813623918DE81B10033FE85 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7813623818DE81B10033FE85 /* Images.xcassets */; };
+		7813624018DE81B10033FE85 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7813623F18DE81B10033FE85 /* XCTest.framework */; };
+		7813624118DE81B10033FE85 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7813622018DE81B10033FE85 /* Cocoa.framework */; };
+		7813624918DE81B10033FE85 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7813624718DE81B10033FE85 /* InfoPlist.strings */; };
+		7813624B18DE81B10033FE85 /* SimpleMapperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7813624A18DE81B10033FE85 /* SimpleMapperTests.m */; };
+		7813626218DE85A50033FE85 /* BaseGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7813626118DE85A50033FE85 /* BaseGLView.m */; };
+		7813626318DE85A50033FE85 /* BaseGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7813626118DE85A50033FE85 /* BaseGLView.m */; };
+		7813626818DE86330033FE85 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7813626718DE86330033FE85 /* MainViewController.m */; };
+		7813626918DE86330033FE85 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7813626718DE86330033FE85 /* MainViewController.m */; };
+		7813626C18DE8F370033FE85 /* MainViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7813626B18DE8F370033FE85 /* MainViewModel.m */; };
+		7813626D18DE8F370033FE85 /* MainViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7813626B18DE8F370033FE85 /* MainViewModel.m */; };
+		7813627018DE99110033FE85 /* Syphon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7813625A18DE83280033FE85 /* Syphon.framework */; };
+		7813627418DEA3810033FE85 /* ServerDescriptionValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7813627318DEA3810033FE85 /* ServerDescriptionValueTransformer.m */; };
+		7813627518DEA3810033FE85 /* ServerDescriptionValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7813627318DEA3810033FE85 /* ServerDescriptionValueTransformer.m */; };
+		7813627818DEBFC70033FE85 /* RectEditView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7813627718DEBFC70033FE85 /* RectEditView.m */; };
+		7813627918DEBFC70033FE85 /* RectEditView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7813627718DEBFC70033FE85 /* RectEditView.m */; };
+		7813627D18DEC4920033FE85 /* NSView+Graphics.m in Sources */ = {isa = PBXBuildFile; fileRef = 7813627C18DEC4920033FE85 /* NSView+Graphics.m */; };
+		7813627E18DEC4920033FE85 /* NSView+Graphics.m in Sources */ = {isa = PBXBuildFile; fileRef = 7813627C18DEC4920033FE85 /* NSView+Graphics.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7813624218DE81B10033FE85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7813621518DE81B10033FE85 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7813621C18DE81B10033FE85;
+			remoteInfo = SimpleMapper;
+		};
+		7813625918DE83280033FE85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7813625418DE83280033FE85 /* Syphon.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
+			remoteInfo = Syphon;
+		};
+		7813626E18DE98EE0033FE85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7813625418DE83280033FE85 /* Syphon.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
+			remoteInfo = Syphon;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7813621D18DE81B10033FE85 /* SimpleMapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleMapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7813622018DE81B10033FE85 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		7813622318DE81B10033FE85 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		7813622418DE81B10033FE85 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		7813622518DE81B10033FE85 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7813622818DE81B10033FE85 /* SimpleMapper-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SimpleMapper-Info.plist"; sourceTree = "<group>"; };
+		7813622A18DE81B10033FE85 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7813622C18DE81B10033FE85 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7813622E18DE81B10033FE85 /* SimpleMapper-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpleMapper-Prefix.pch"; sourceTree = "<group>"; };
+		7813623018DE81B10033FE85 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		7813623218DE81B10033FE85 /* PMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PMAppDelegate.h; sourceTree = "<group>"; };
+		7813623318DE81B10033FE85 /* PMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PMAppDelegate.m; sourceTree = "<group>"; };
+		7813623618DE81B10033FE85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		7813623818DE81B10033FE85 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7813623E18DE81B10033FE85 /* SimpleMapperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleMapperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7813623F18DE81B10033FE85 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		7813624618DE81B10033FE85 /* SimpleMapperTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SimpleMapperTests-Info.plist"; sourceTree = "<group>"; };
+		7813624818DE81B10033FE85 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7813624A18DE81B10033FE85 /* SimpleMapperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleMapperTests.m; sourceTree = "<group>"; };
+		7813625418DE83280033FE85 /* Syphon.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Syphon.xcodeproj; path = "Syphon-Framework/Syphon.xcodeproj"; sourceTree = "<group>"; };
+		7813626018DE85A50033FE85 /* BaseGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseGLView.h; path = views/BaseGLView.h; sourceTree = "<group>"; };
+		7813626118DE85A50033FE85 /* BaseGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseGLView.m; path = views/BaseGLView.m; sourceTree = "<group>"; };
+		7813626618DE86330033FE85 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = controllers/MainViewController.h; sourceTree = "<group>"; };
+		7813626718DE86330033FE85 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = controllers/MainViewController.m; sourceTree = "<group>"; };
+		7813626A18DE8F370033FE85 /* MainViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewModel.h; path = models/MainViewModel.h; sourceTree = "<group>"; };
+		7813626B18DE8F370033FE85 /* MainViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewModel.m; path = models/MainViewModel.m; sourceTree = "<group>"; };
+		7813627218DEA3810033FE85 /* ServerDescriptionValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ServerDescriptionValueTransformer.h; path = models/ServerDescriptionValueTransformer.h; sourceTree = "<group>"; };
+		7813627318DEA3810033FE85 /* ServerDescriptionValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ServerDescriptionValueTransformer.m; path = models/ServerDescriptionValueTransformer.m; sourceTree = "<group>"; };
+		7813627618DEBFC70033FE85 /* RectEditView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RectEditView.h; path = views/RectEditView.h; sourceTree = "<group>"; };
+		7813627718DEBFC70033FE85 /* RectEditView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RectEditView.m; path = views/RectEditView.m; sourceTree = "<group>"; };
+		7813627B18DEC4920033FE85 /* NSView+Graphics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSView+Graphics.h"; path = "additions/NSView+Graphics.h"; sourceTree = "<group>"; };
+		7813627C18DEC4920033FE85 /* NSView+Graphics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSView+Graphics.m"; path = "additions/NSView+Graphics.m"; sourceTree = "<group>"; };
+		7813627F18E0376B0033FE85 /* MapperTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MapperTypes.h; path = models/MapperTypes.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7813621A18DE81B10033FE85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7813627018DE99110033FE85 /* Syphon.framework in Frameworks */,
+				7813622118DE81B10033FE85 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7813623B18DE81B10033FE85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7813624118DE81B10033FE85 /* Cocoa.framework in Frameworks */,
+				7813624018DE81B10033FE85 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7813621418DE81B10033FE85 = {
+			isa = PBXGroup;
+			children = (
+				7813625418DE83280033FE85 /* Syphon.xcodeproj */,
+				7813622618DE81B10033FE85 /* SimpleMapper */,
+				7813624418DE81B10033FE85 /* SimpleMapperTests */,
+				7813621F18DE81B10033FE85 /* Frameworks */,
+				7813621E18DE81B10033FE85 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7813621E18DE81B10033FE85 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7813621D18DE81B10033FE85 /* SimpleMapper.app */,
+				7813623E18DE81B10033FE85 /* SimpleMapperTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7813621F18DE81B10033FE85 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7813622018DE81B10033FE85 /* Cocoa.framework */,
+				7813623F18DE81B10033FE85 /* XCTest.framework */,
+				7813622218DE81B10033FE85 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7813622218DE81B10033FE85 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7813622318DE81B10033FE85 /* AppKit.framework */,
+				7813622418DE81B10033FE85 /* CoreData.framework */,
+				7813622518DE81B10033FE85 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		7813622618DE81B10033FE85 /* SimpleMapper */ = {
+			isa = PBXGroup;
+			children = (
+				7813627A18DEC44F0033FE85 /* additions */,
+				7813626518DE85ED0033FE85 /* models */,
+				7813626418DE85E50033FE85 /* controllers */,
+				7813625B18DE84460033FE85 /* views */,
+				7813623218DE81B10033FE85 /* PMAppDelegate.h */,
+				7813623318DE81B10033FE85 /* PMAppDelegate.m */,
+				7813623518DE81B10033FE85 /* MainMenu.xib */,
+				7813623818DE81B10033FE85 /* Images.xcassets */,
+				7813622718DE81B10033FE85 /* Supporting Files */,
+			);
+			path = SimpleMapper;
+			sourceTree = "<group>";
+		};
+		7813622718DE81B10033FE85 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7813622818DE81B10033FE85 /* SimpleMapper-Info.plist */,
+				7813622918DE81B10033FE85 /* InfoPlist.strings */,
+				7813622C18DE81B10033FE85 /* main.m */,
+				7813622E18DE81B10033FE85 /* SimpleMapper-Prefix.pch */,
+				7813622F18DE81B10033FE85 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7813624418DE81B10033FE85 /* SimpleMapperTests */ = {
+			isa = PBXGroup;
+			children = (
+				7813624A18DE81B10033FE85 /* SimpleMapperTests.m */,
+				7813624518DE81B10033FE85 /* Supporting Files */,
+			);
+			path = SimpleMapperTests;
+			sourceTree = "<group>";
+		};
+		7813624518DE81B10033FE85 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7813624618DE81B10033FE85 /* SimpleMapperTests-Info.plist */,
+				7813624718DE81B10033FE85 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7813625518DE83280033FE85 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7813625A18DE83280033FE85 /* Syphon.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7813625B18DE84460033FE85 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				7813626018DE85A50033FE85 /* BaseGLView.h */,
+				7813626118DE85A50033FE85 /* BaseGLView.m */,
+				7813627618DEBFC70033FE85 /* RectEditView.h */,
+				7813627718DEBFC70033FE85 /* RectEditView.m */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
+		7813626418DE85E50033FE85 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7813626618DE86330033FE85 /* MainViewController.h */,
+				7813626718DE86330033FE85 /* MainViewController.m */,
+			);
+			name = controllers;
+			sourceTree = "<group>";
+		};
+		7813626518DE85ED0033FE85 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				7813626A18DE8F370033FE85 /* MainViewModel.h */,
+				7813626B18DE8F370033FE85 /* MainViewModel.m */,
+				7813627218DEA3810033FE85 /* ServerDescriptionValueTransformer.h */,
+				7813627318DEA3810033FE85 /* ServerDescriptionValueTransformer.m */,
+				7813627F18E0376B0033FE85 /* MapperTypes.h */,
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
+		7813627A18DEC44F0033FE85 /* additions */ = {
+			isa = PBXGroup;
+			children = (
+				7813627B18DEC4920033FE85 /* NSView+Graphics.h */,
+				7813627C18DEC4920033FE85 /* NSView+Graphics.m */,
+			);
+			name = additions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7813621C18DE81B10033FE85 /* SimpleMapper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7813624E18DE81B10033FE85 /* Build configuration list for PBXNativeTarget "SimpleMapper" */;
+			buildPhases = (
+				7813621918DE81B10033FE85 /* Sources */,
+				7813621A18DE81B10033FE85 /* Frameworks */,
+				7813621B18DE81B10033FE85 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7813626F18DE98EE0033FE85 /* PBXTargetDependency */,
+			);
+			name = SimpleMapper;
+			productName = SimpleMapper;
+			productReference = 7813621D18DE81B10033FE85 /* SimpleMapper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7813623D18DE81B10033FE85 /* SimpleMapperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7813625118DE81B10033FE85 /* Build configuration list for PBXNativeTarget "SimpleMapperTests" */;
+			buildPhases = (
+				7813623A18DE81B10033FE85 /* Sources */,
+				7813623B18DE81B10033FE85 /* Frameworks */,
+				7813623C18DE81B10033FE85 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7813624318DE81B10033FE85 /* PBXTargetDependency */,
+			);
+			name = SimpleMapperTests;
+			productName = SimpleMapperTests;
+			productReference = 7813623E18DE81B10033FE85 /* SimpleMapperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7813621518DE81B10033FE85 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PM;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Koki Ibukuro";
+				TargetAttributes = {
+					7813623D18DE81B10033FE85 = {
+						TestTargetID = 7813621C18DE81B10033FE85;
+					};
+				};
+			};
+			buildConfigurationList = 7813621818DE81B10033FE85 /* Build configuration list for PBXProject "SimpleMapper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7813621418DE81B10033FE85;
+			productRefGroup = 7813621E18DE81B10033FE85 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 7813625518DE83280033FE85 /* Products */;
+					ProjectRef = 7813625418DE83280033FE85 /* Syphon.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				7813621C18DE81B10033FE85 /* SimpleMapper */,
+				7813623D18DE81B10033FE85 /* SimpleMapperTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		7813625A18DE83280033FE85 /* Syphon.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Syphon.framework;
+			remoteRef = 7813625918DE83280033FE85 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7813621B18DE81B10033FE85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7813622B18DE81B10033FE85 /* InfoPlist.strings in Resources */,
+				7813623918DE81B10033FE85 /* Images.xcassets in Resources */,
+				7813623118DE81B10033FE85 /* Credits.rtf in Resources */,
+				7813623718DE81B10033FE85 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7813623C18DE81B10033FE85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7813624918DE81B10033FE85 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7813621918DE81B10033FE85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7813622D18DE81B10033FE85 /* main.m in Sources */,
+				7813623418DE81B10033FE85 /* PMAppDelegate.m in Sources */,
+				7813626218DE85A50033FE85 /* BaseGLView.m in Sources */,
+				7813627818DEBFC70033FE85 /* RectEditView.m in Sources */,
+				7813627D18DEC4920033FE85 /* NSView+Graphics.m in Sources */,
+				7813626C18DE8F370033FE85 /* MainViewModel.m in Sources */,
+				7813626818DE86330033FE85 /* MainViewController.m in Sources */,
+				7813627418DEA3810033FE85 /* ServerDescriptionValueTransformer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7813623A18DE81B10033FE85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7813626318DE85A50033FE85 /* BaseGLView.m in Sources */,
+				7813626918DE86330033FE85 /* MainViewController.m in Sources */,
+				7813624B18DE81B10033FE85 /* SimpleMapperTests.m in Sources */,
+				7813626D18DE8F370033FE85 /* MainViewModel.m in Sources */,
+				7813627918DEBFC70033FE85 /* RectEditView.m in Sources */,
+				7813627518DEA3810033FE85 /* ServerDescriptionValueTransformer.m in Sources */,
+				7813627E18DEC4920033FE85 /* NSView+Graphics.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7813624318DE81B10033FE85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7813621C18DE81B10033FE85 /* SimpleMapper */;
+			targetProxy = 7813624218DE81B10033FE85 /* PBXContainerItemProxy */;
+		};
+		7813626F18DE98EE0033FE85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Syphon;
+			targetProxy = 7813626E18DE98EE0033FE85 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7813622918DE81B10033FE85 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7813622A18DE81B10033FE85 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7813622F18DE81B10033FE85 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7813623018DE81B10033FE85 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		7813623518DE81B10033FE85 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7813623618DE81B10033FE85 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		7813624718DE81B10033FE85 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7813624818DE81B10033FE85 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7813624C18DE81B10033FE85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		7813624D18DE81B10033FE85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		7813624F18DE81B10033FE85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleMapper/SimpleMapper-Prefix.pch";
+				INFOPLIST_FILE = "SimpleMapper/SimpleMapper-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7813625018DE81B10033FE85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleMapper/SimpleMapper-Prefix.pch";
+				INFOPLIST_FILE = "SimpleMapper/SimpleMapper-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		7813625218DE81B10033FE85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SimpleMapper.app/Contents/MacOS/SimpleMapper";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleMapper/SimpleMapper-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SimpleMapperTests/SimpleMapperTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		7813625318DE81B10033FE85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SimpleMapper.app/Contents/MacOS/SimpleMapper";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleMapper/SimpleMapper-Prefix.pch";
+				INFOPLIST_FILE = "SimpleMapperTests/SimpleMapperTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7813621818DE81B10033FE85 /* Build configuration list for PBXProject "SimpleMapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7813624C18DE81B10033FE85 /* Debug */,
+				7813624D18DE81B10033FE85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7813624E18DE81B10033FE85 /* Build configuration list for PBXNativeTarget "SimpleMapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7813624F18DE81B10033FE85 /* Debug */,
+				7813625018DE81B10033FE85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7813625118DE81B10033FE85 /* Build configuration list for PBXNativeTarget "SimpleMapperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7813625218DE81B10033FE85 /* Debug */,
+				7813625318DE81B10033FE85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7813621518DE81B10033FE85 /* Project object */;
+}
