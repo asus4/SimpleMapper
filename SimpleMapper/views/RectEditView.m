@@ -117,7 +117,7 @@ const int kAnchorRadius = 5;
 {
     if (self == [super initWithFrame:frame]) {
         lineColor = [NSColor colorWithCalibratedRed:0.943 green:0.229 blue:0.238 alpha:0.7];
-        self.rect = [[RectLine alloc] initWithFrame:NSMakeRect(10, 20, 100, 80)];
+        self.rect = [[RectLine alloc] initWithFrame:NSMakeRect(0, 0, frame.size.width, frame.size.height)];
     }
     return self;
 }
@@ -146,18 +146,12 @@ const int kAnchorRadius = 5;
 {
     [_rect mouseDrag:[self convertPoint:theEvent.locationInWindow fromView:nil]];
     [self setNeedsDisplay:YES];
-    if(updateHandler) {
-        updateHandler([self getNormalized]);
-    }
 }
 
 - (void) mouseUp:(NSEvent *)theEvent
 {
     [_rect mouseUp:[self convertPoint:theEvent.locationInWindow fromView:nil]];
     [self setNeedsDisplay:YES];
-    if(updateHandler) {
-        updateHandler([self getNormalized]);
-    }
 }
 
 - (RatePoints) getNormalized
@@ -176,6 +170,25 @@ const int kAnchorRadius = 5;
 - (void) setUpdateHandler:(UpdateHandler)func
 {
     updateHandler = func;
+}
+
+- (void) reset
+{
+    NSSize size = self.frame.size;
+    
+    _rect->anchor[0] = NSMakePoint(0, 0);
+    _rect->anchor[1] = NSMakePoint(size.width, 0);
+    _rect->anchor[2] = NSMakePoint(size.width, size.height);
+    _rect->anchor[3] = NSMakePoint(0, size.height);
+    [self setNeedsDisplay:YES];
+}
+
+- (void) setNeedsDisplay:(BOOL)flag
+{
+    [super setNeedsDisplay:flag];
+    if(updateHandler) {
+        updateHandler([self getNormalized]);
+    }
 }
 
 

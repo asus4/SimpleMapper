@@ -20,6 +20,7 @@
 @property (nonatomic, strong) NSArray *selectedServerDescriptions;
 @property (nonatomic, strong, readonly) SyphonClient* syphonClient;
 
+- (void) reset;
 - (void) finalize;
 
 

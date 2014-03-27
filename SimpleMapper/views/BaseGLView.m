@@ -52,7 +52,6 @@
         [self drawSyphon:image size:size];
     }
     [[self openGLContext] flushBuffer];
-    
 }
 
 - (void) drawSyphon:(SyphonImage*) image size:(NSSize) size;
@@ -72,12 +71,6 @@
 //    glDrawArrays( GL_QUADS, 0, 4 );
 //    glDrawArrays( GL_TRIANGLE_STRIP, 0, 4 );
     glDrawArrays( GL_POLYGON, 0, 4 );
-    
-    
-//    static int nf = sizeof face / sizeof face[0];
-    
-//    glEnable(GL_TEXTURE_2D);
-//    glDrawElements(GL_TRIANGLES, nf * 3, GL_UNSIGNED_INT, face);
     
     glDisableClientState( GL_TEXTURE_COORD_ARRAY );
     glDisableClientState(GL_VERTEX_ARRAY);
@@ -104,15 +97,8 @@
     
     [[self openGLContext] update];
     
-    
     // rezie mesh
     NSSize textureSize = self.image.textureSize;
-    NSSize scaled;
-    float wr = textureSize.width / size.width;
-    float hr = textureSize.height / size.height;
-    float ratio;
-    ratio = (hr < wr ? wr : hr);
-    scaled = NSMakeSize((textureSize.width / ratio), (textureSize.height / ratio));
     
     _rect.tex_coords[0] = 0;
     _rect.tex_coords[1] = 0;
@@ -123,17 +109,14 @@
     _rect.tex_coords[6] = 0.0;
     _rect.tex_coords[7] = textureSize.height;
     
-    
     _rect.vertex[0] = 0;
     _rect.vertex[1] = 0;
-    _rect.vertex[2] = scaled.width;
+    _rect.vertex[2] = size.width;
     _rect.vertex[3] = 0;
-    _rect.vertex[4] = scaled.width;
-    _rect.vertex[5] = scaled.height;
+    _rect.vertex[4] = size.width;
+    _rect.vertex[5] = size.height;
     _rect.vertex[6] = 0;
-    _rect.vertex[7] = scaled.height;
-    
-//    NSLog(@"sss : %f %f", halfw, halfh);
+    _rect.vertex[7] = size.height;
 }
 
 #pragma mark setter getter

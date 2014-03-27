@@ -31,4 +31,5 @@ typedef void (^UpdateHandler)(RatePoints points);
 
 - (RatePoints) getNormalized;
 - (void) setUpdateHandler:(UpdateHandler)func;
+- (void) reset;
 @end

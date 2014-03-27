@@ -31,6 +31,7 @@
 		7813627918DEBFC70033FE85 /* RectEditView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7813627718DEBFC70033FE85 /* RectEditView.m */; };
 		7813627D18DEC4920033FE85 /* NSView+Graphics.m in Sources */ = {isa = PBXBuildFile; fileRef = 7813627C18DEC4920033FE85 /* NSView+Graphics.m */; };
 		7813627E18DEC4920033FE85 /* NSView+Graphics.m in Sources */ = {isa = PBXBuildFile; fileRef = 7813627C18DEC4920033FE85 /* NSView+Graphics.m */; };
+		78D8AE5418E12F1F00ED3678 /* ProjectionWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D8AE5318E12F1F00ED3678 /* ProjectionWindow.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,8 @@
 		7813627B18DEC4920033FE85 /* NSView+Graphics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSView+Graphics.h"; path = "additions/NSView+Graphics.h"; sourceTree = "<group>"; };
 		7813627C18DEC4920033FE85 /* NSView+Graphics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSView+Graphics.m"; path = "additions/NSView+Graphics.m"; sourceTree = "<group>"; };
 		7813627F18E0376B0033FE85 /* MapperTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MapperTypes.h; path = models/MapperTypes.h; sourceTree = "<group>"; };
+		78D8AE5218E12F1F00ED3678 /* ProjectionWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProjectionWindow.h; path = views/ProjectionWindow.h; sourceTree = "<group>"; };
+		78D8AE5318E12F1F00ED3678 /* ProjectionWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProjectionWindow.m; path = views/ProjectionWindow.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,6 +219,8 @@
 				7813626118DE85A50033FE85 /* BaseGLView.m */,
 				7813627618DEBFC70033FE85 /* RectEditView.h */,
 				7813627718DEBFC70033FE85 /* RectEditView.m */,
+				78D8AE5218E12F1F00ED3678 /* ProjectionWindow.h */,
+				78D8AE5318E12F1F00ED3678 /* ProjectionWindow.m */,
 			);
 			name = views;
 			sourceTree = "<group>";
@@ -367,6 +372,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7813622D18DE81B10033FE85 /* main.m in Sources */,
+				78D8AE5418E12F1F00ED3678 /* ProjectionWindow.m in Sources */,
 				7813623418DE81B10033FE85 /* PMAppDelegate.m in Sources */,
 				7813626218DE85A50033FE85 /* BaseGLView.m in Sources */,
 				7813627818DEBFC70033FE85 /* RectEditView.m in Sources */,

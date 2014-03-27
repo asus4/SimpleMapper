@@ -69,6 +69,12 @@
 
 #pragma public methods
 
+- (void) reset
+{
+    [self.inEditView reset];
+    [self.outEditView reset];
+}
+
 - (void) finalize
 {
     [self.syphonClient stop];

@@ -23,4 +23,19 @@
     return self;
 }
 
+- (IBAction)reset:(id)sender {
+    [self.viewModel reset];
+}
+
+- (IBAction)toggleFullscreen:(id)sender {
+    // TODO : hide cursor
+    _projectionWindow.fullscreen = !_projectionWindow.fullscreen;
+    if(_projectionWindow.fullscreen) {
+//        [NSCursor hide];
+    }
+    else {
+//        [NSCursor unhide];
+    }
+    
+}
 @end
