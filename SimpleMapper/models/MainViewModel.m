@@ -43,6 +43,8 @@
     
     NSLog(@"selectedServerDescription : %@", selectedServerDescriptions);
     
+    __block BOOL initialized = NO;
+    
     // setup syphon
     [_syphonClient stop];
     _syphonClient = [[SyphonClient alloc] initWithServerDescription:selectedServerDescriptions.lastObject
@@ -55,6 +57,11 @@
             
             _glView.image = frame;
             [_glView setNeedsDisplay:YES];
+            
+            if(!initialized) {
+                [_glView resize:_glView.superview.frame.size];
+                initialized = YES;
+            }
         }];
     }];
     
