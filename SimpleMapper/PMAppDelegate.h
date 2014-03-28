@@ -8,10 +8,15 @@
 
 #import <Cocoa/Cocoa.h>
 #import "MainViewModel.h"
+#import "ProjectionWindow.h"
 
 @interface PMAppDelegate : NSObject <NSApplicationDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
 @property (weak) IBOutlet MainViewModel *viewModel;
+@property (unsafe_unretained) IBOutlet ProjectionWindow *projectinoWindow;
+
+
+- (IBAction)showEditor:(id)sender;
 
 @end

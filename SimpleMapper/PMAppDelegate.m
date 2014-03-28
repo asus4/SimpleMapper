@@ -7,18 +7,23 @@
 //
 
 #import "PMAppDelegate.h"
-#import <Syphon/Syphon.h>
 
 @implementation PMAppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-
+    _projectinoWindow.fullscreen = YES;
+    _projectinoWindow.fullscreen = NO;
+    _projectinoWindow.fullscreen = YES;
 }
 
 - (void) applicationWillTerminate:(NSNotification *)notification
 {
     [self.viewModel finalize];
+}
+
+- (IBAction)showEditor:(id)sender {
+    [_window makeKeyAndOrderFront:nil];
 }
 
 @end

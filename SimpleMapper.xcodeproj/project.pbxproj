@@ -24,13 +24,14 @@
 		7813626918DE86330033FE85 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7813626718DE86330033FE85 /* MainViewController.m */; };
 		7813626C18DE8F370033FE85 /* MainViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7813626B18DE8F370033FE85 /* MainViewModel.m */; };
 		7813626D18DE8F370033FE85 /* MainViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7813626B18DE8F370033FE85 /* MainViewModel.m */; };
-		7813627018DE99110033FE85 /* Syphon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7813625A18DE83280033FE85 /* Syphon.framework */; };
 		7813627418DEA3810033FE85 /* ServerDescriptionValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7813627318DEA3810033FE85 /* ServerDescriptionValueTransformer.m */; };
 		7813627518DEA3810033FE85 /* ServerDescriptionValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7813627318DEA3810033FE85 /* ServerDescriptionValueTransformer.m */; };
 		7813627818DEBFC70033FE85 /* RectEditView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7813627718DEBFC70033FE85 /* RectEditView.m */; };
 		7813627918DEBFC70033FE85 /* RectEditView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7813627718DEBFC70033FE85 /* RectEditView.m */; };
 		7813627D18DEC4920033FE85 /* NSView+Graphics.m in Sources */ = {isa = PBXBuildFile; fileRef = 7813627C18DEC4920033FE85 /* NSView+Graphics.m */; };
 		7813627E18DEC4920033FE85 /* NSView+Graphics.m in Sources */ = {isa = PBXBuildFile; fileRef = 7813627C18DEC4920033FE85 /* NSView+Graphics.m */; };
+		781887B918E561E9001D2966 /* Syphon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 781887B818E561D7001D2966 /* Syphon.framework */; };
+		781887BC18E561F2001D2966 /* Syphon.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 781887B818E561D7001D2966 /* Syphon.framework */; };
 		78D8AE5418E12F1F00ED3678 /* ProjectionWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D8AE5318E12F1F00ED3678 /* ProjectionWindow.m */; };
 /* End PBXBuildFile section */
 
@@ -42,21 +43,34 @@
 			remoteGlobalIDString = 7813621C18DE81B10033FE85;
 			remoteInfo = SimpleMapper;
 		};
-		7813625918DE83280033FE85 /* PBXContainerItemProxy */ = {
+		781887B718E561D7001D2966 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 7813625418DE83280033FE85 /* Syphon.xcodeproj */;
+			containerPortal = 781887B218E561D7001D2966 /* Syphon.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
 			remoteInfo = Syphon;
 		};
-		7813626E18DE98EE0033FE85 /* PBXContainerItemProxy */ = {
+		781887BA18E561ED001D2966 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 7813625418DE83280033FE85 /* Syphon.xcodeproj */;
+			containerPortal = 781887B218E561D7001D2966 /* Syphon.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
 			remoteInfo = Syphon;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		781887B018E56176001D2966 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				781887BC18E561F2001D2966 /* Syphon.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		7813621D18DE81B10033FE85 /* SimpleMapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleMapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,7 +92,6 @@
 		7813624618DE81B10033FE85 /* SimpleMapperTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SimpleMapperTests-Info.plist"; sourceTree = "<group>"; };
 		7813624818DE81B10033FE85 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7813624A18DE81B10033FE85 /* SimpleMapperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleMapperTests.m; sourceTree = "<group>"; };
-		7813625418DE83280033FE85 /* Syphon.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Syphon.xcodeproj; path = "Syphon-Framework/Syphon.xcodeproj"; sourceTree = "<group>"; };
 		7813626018DE85A50033FE85 /* BaseGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseGLView.h; path = views/BaseGLView.h; sourceTree = "<group>"; };
 		7813626118DE85A50033FE85 /* BaseGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseGLView.m; path = views/BaseGLView.m; sourceTree = "<group>"; };
 		7813626618DE86330033FE85 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = controllers/MainViewController.h; sourceTree = "<group>"; };
@@ -92,6 +105,7 @@
 		7813627B18DEC4920033FE85 /* NSView+Graphics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSView+Graphics.h"; path = "additions/NSView+Graphics.h"; sourceTree = "<group>"; };
 		7813627C18DEC4920033FE85 /* NSView+Graphics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSView+Graphics.m"; path = "additions/NSView+Graphics.m"; sourceTree = "<group>"; };
 		7813627F18E0376B0033FE85 /* MapperTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MapperTypes.h; path = models/MapperTypes.h; sourceTree = "<group>"; };
+		781887B218E561D7001D2966 /* Syphon.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Syphon.xcodeproj; path = "Syphon-Framework/Syphon.xcodeproj"; sourceTree = "<group>"; };
 		78D8AE5218E12F1F00ED3678 /* ProjectionWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProjectionWindow.h; path = views/ProjectionWindow.h; sourceTree = "<group>"; };
 		78D8AE5318E12F1F00ED3678 /* ProjectionWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProjectionWindow.m; path = views/ProjectionWindow.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -101,7 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7813627018DE99110033FE85 /* Syphon.framework in Frameworks */,
+				781887B918E561E9001D2966 /* Syphon.framework in Frameworks */,
 				7813622118DE81B10033FE85 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -121,7 +135,7 @@
 		7813621418DE81B10033FE85 = {
 			isa = PBXGroup;
 			children = (
-				7813625418DE83280033FE85 /* Syphon.xcodeproj */,
+				781887B218E561D7001D2966 /* Syphon.xcodeproj */,
 				7813622618DE81B10033FE85 /* SimpleMapper */,
 				7813624418DE81B10033FE85 /* SimpleMapperTests */,
 				7813621F18DE81B10033FE85 /* Frameworks */,
@@ -204,14 +218,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		7813625518DE83280033FE85 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				7813625A18DE83280033FE85 /* Syphon.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		7813625B18DE84460033FE85 /* views */ = {
 			isa = PBXGroup;
 			children = (
@@ -255,6 +261,14 @@
 			name = additions;
 			sourceTree = "<group>";
 		};
+		781887B318E561D7001D2966 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				781887B818E561D7001D2966 /* Syphon.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -265,11 +279,12 @@
 				7813621918DE81B10033FE85 /* Sources */,
 				7813621A18DE81B10033FE85 /* Frameworks */,
 				7813621B18DE81B10033FE85 /* Resources */,
+				781887B018E56176001D2966 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				7813626F18DE98EE0033FE85 /* PBXTargetDependency */,
+				781887BB18E561ED001D2966 /* PBXTargetDependency */,
 			);
 			name = SimpleMapper;
 			productName = SimpleMapper;
@@ -322,8 +337,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 7813625518DE83280033FE85 /* Products */;
-					ProjectRef = 7813625418DE83280033FE85 /* Syphon.xcodeproj */;
+					ProductGroup = 781887B318E561D7001D2966 /* Products */;
+					ProjectRef = 781887B218E561D7001D2966 /* Syphon.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -335,11 +350,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		7813625A18DE83280033FE85 /* Syphon.framework */ = {
+		781887B818E561D7001D2966 /* Syphon.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Syphon.framework;
-			remoteRef = 7813625918DE83280033FE85 /* PBXContainerItemProxy */;
+			remoteRef = 781887B718E561D7001D2966 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -405,10 +420,10 @@
 			target = 7813621C18DE81B10033FE85 /* SimpleMapper */;
 			targetProxy = 7813624218DE81B10033FE85 /* PBXContainerItemProxy */;
 		};
-		7813626F18DE98EE0033FE85 /* PBXTargetDependency */ = {
+		781887BB18E561ED001D2966 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Syphon;
-			targetProxy = 7813626E18DE98EE0033FE85 /* PBXContainerItemProxy */;
+			targetProxy = 781887BA18E561ED001D2966 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -526,6 +541,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SimpleMapper/SimpleMapper-Prefix.pch";
 				INFOPLIST_FILE = "SimpleMapper/SimpleMapper-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -539,6 +555,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SimpleMapper/SimpleMapper-Prefix.pch";
 				INFOPLIST_FILE = "SimpleMapper/SimpleMapper-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
