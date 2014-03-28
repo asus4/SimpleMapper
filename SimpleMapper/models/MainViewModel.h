@@ -23,5 +23,7 @@
 - (void) reset;
 - (void) finalize;
 
+- (void) load;
+- (void) save;
 
 @end
