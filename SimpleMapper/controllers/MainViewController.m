@@ -23,6 +23,11 @@
     return self;
 }
 
+- (void) awakeFromNib
+{
+    _projectionWindow.fullscreen = YES;
+}
+
 - (IBAction)reset:(id)sender {
     [self.viewModel reset];
 }

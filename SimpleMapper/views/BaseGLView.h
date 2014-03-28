@@ -17,4 +17,6 @@
 @property (nonatomic) RatePoints textureCord;
 @property (nonatomic) RatePoints vertex;
 
+- (void) resize:(NSSize) size;
+
 @end

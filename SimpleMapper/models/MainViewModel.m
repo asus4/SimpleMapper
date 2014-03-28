@@ -27,6 +27,7 @@
     
     [self bind:@"selectedServerDescriptions" toObject:self.syphonServersController withKeyPath:@"selectedObjects" options:nil];
     
+    [self load];
 }
 
 
@@ -41,7 +42,7 @@
         return;
     }
     
-    NSLog(@"selectedServerDescription : %@", selectedServerDescriptions);
+    __block BOOL initialized = NO;
     
     // setup syphon
     [_syphonClient stop];
@@ -55,6 +56,13 @@
             
             _glView.image = frame;
             [_glView setNeedsDisplay:YES];
+            
+            if(!initialized) {
+                [_glView resize:_glView.superview.frame.size];
+                _glView.textureCord = [self.inEditView getNormalized];
+                _glView.vertex = [self.outEditView getNormalized];
+                initialized = YES;
+            }
         }];
     }];
     
@@ -78,6 +86,38 @@
 - (void) finalize
 {
     [self.syphonClient stop];
+    [self save];
+}
+
+- (void) load
+{
+    NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
+    NSData *inData = [ud dataForKey:@"GL_IN_DATA"];
+    NSData *outData = [ud dataForKey:@"GL_OUT_DATA"];
+    
+    if(!inData || !outData) {
+        return;
+    }
+    
+    NSPoint *inPoint = (NSPoint*) inData.bytes;
+    NSPoint *outPoint = (NSPoint*) outData.bytes;
+    
+    for(int i=0; i<4; ++i) {
+        _inEditView.rect->anchor[i] = inPoint[i];
+        _outEditView.rect->anchor[i] = outPoint[i];
+    }
+}
+
+- (void) save
+{
+    int dataLength = sizeof(NSPoint)*4;
+    NSData * inData = [NSData dataWithBytes:_inEditView.rect->anchor length:dataLength];
+    NSData * outData = [NSData dataWithBytes:_outEditView.rect->anchor length:dataLength];
+    
+    NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
+    [ud setObject:inData forKey:@"GL_IN_DATA"];
+    [ud setObject:outData forKey:@"GL_OUT_DATA"];
+    [ud synchronize];
 }
 
 
