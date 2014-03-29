@@ -227,18 +227,6 @@ static inline NSPoint convertPoint(NSPoint *p) {
     
     [[self openGLContext] update];
     
-    // rezie mesh
-    NSSize textureSize = self.image.textureSize;
-    
-    _rect.tex_coords[0] = 0;
-    _rect.tex_coords[1] = 0;
-    _rect.tex_coords[2] = textureSize.width;
-    _rect.tex_coords[3] = 0.0;
-    _rect.tex_coords[4] = textureSize.width;
-    _rect.tex_coords[5] = textureSize.height;
-    _rect.tex_coords[6] = 0.0;
-    _rect.tex_coords[7] = textureSize.height;
-    
     _rect.vertex[0] = 0;
     _rect.vertex[1] = 0;
     _rect.vertex[2] = size.width;

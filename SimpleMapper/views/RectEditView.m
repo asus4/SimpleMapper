@@ -75,6 +75,25 @@ const int kAnchorRadius = 5;
 {
     if(hit>=0) {
         anchor[hit] = point;
+        if(!_allowQuad) {
+            if(hit == 0) {
+                anchor[1].y = point.y;
+                anchor[3].x = point.x;
+            }
+            else if(hit == 1) {
+                anchor[0].y = point.y;
+                anchor[2].x = point.x;
+            }
+            else if(hit == 2) {
+                anchor[1].x = point.x;
+                anchor[3].y = point.y;
+            }
+            else if(hit == 3) {
+                anchor[0].x = point.x;
+                anchor[2].y = point.y;
+            }
+        }
+        
     }
 }
 
@@ -154,6 +173,22 @@ const int kAnchorRadius = 5;
     [self setNeedsDisplay:YES];
 }
 
+- (void) setNeedsDisplay:(BOOL)flag
+{
+    [super setNeedsDisplay:flag];
+    if(updateHandler) {
+        updateHandler([self getNormalized]);
+    }
+}
+
+#pragma mark public methods
+
+- (void) setAllowQuad:(BOOL)allowQuad
+{
+    _allowQuad = allowQuad;
+    self.rect.allowQuad = allowQuad;
+}
+
 - (RatePoints) getNormalized
 {
     RatePoints p;
@@ -181,14 +216,6 @@ const int kAnchorRadius = 5;
     _rect->anchor[2] = NSMakePoint(size.width, size.height);
     _rect->anchor[3] = NSMakePoint(0, size.height);
     [self setNeedsDisplay:YES];
-}
-
-- (void) setNeedsDisplay:(BOOL)flag
-{
-    [super setNeedsDisplay:flag];
-    if(updateHandler) {
-        updateHandler([self getNormalized]);
-    }
 }
 
 

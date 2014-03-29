@@ -22,8 +22,10 @@
 
 - (void) awakeFromNib
 {
+    self.inEditView.allowQuad = NO;
+    self.outEditView.allowQuad = YES;
+    
     [self.syphonServersController bind:@"contentArray" toObject:[SyphonServerDirectory sharedDirectory] withKeyPath:@"servers" options:nil];
-
     
     [self bind:@"selectedServerDescriptions" toObject:self.syphonServersController withKeyPath:@"selectedObjects" options:nil];
     
