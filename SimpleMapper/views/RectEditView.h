@@ -14,6 +14,8 @@
     @public
     NSPoint anchor[4];
 }
+@property (nonatomic) BOOL allowQuad;
+
 - (id)initWithFrame:(NSRect)frame;
 - (void)draw;
 - (void)mouseDown:(NSPoint)point;
@@ -28,6 +30,7 @@ typedef void (^UpdateHandler)(RatePoints points);
 @interface RectEditView : NSView
 
 @property (nonatomic, strong) RectLine *rect;
+@property (nonatomic) BOOL allowQuad;
 
 - (RatePoints) getNormalized;
 - (void) setUpdateHandler:(UpdateHandler)func;

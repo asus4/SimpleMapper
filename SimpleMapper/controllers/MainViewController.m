@@ -24,6 +24,17 @@
 }
 
 - (IBAction)reset:(id)sender {
+    
+    NSAlert * alert = [NSAlert alertWithMessageText:@"Confirmation"
+                                      defaultButton:@"GO"
+                                    alternateButton:@"Cancel"
+                                        otherButton:NULL
+                          informativeTextWithFormat:@"Reset all rectangles?"];
+    NSUInteger result = [alert runModal];
+    if(result != NSAlertDefaultReturn) {
+        return; // cancel
+    }
+    
     [self.viewModel reset];
 }
 
