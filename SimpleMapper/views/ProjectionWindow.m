@@ -28,10 +28,11 @@
 
 - (void) mouseDragged:(NSEvent *)theEvent
 {
+    NSPoint p = self.mouseLocationOutsideOfEventStream;
+    NSRect current = [self convertRectToScreen:NSMakeRect(p.x, p.y, 0, 0)];
     NSPoint next;
-    NSPoint current = [self convertBaseToScreen:[self mouseLocationOutsideOfEventStream]];
-    next.x = current.x - initialPosition.x;
-    next.y = current.y - initialPosition.y;
+    next.x = current.origin.x - initialPosition.x;
+    next.y = current.origin.y - initialPosition.y;
     [self setFrameOrigin:next];
 }
 

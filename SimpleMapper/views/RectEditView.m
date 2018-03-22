@@ -27,7 +27,7 @@ const int kAnchorRadius = 5;
 
 - (id)initWithFrame:(NSRect)frame
 {
-    if(self == [super init]) {
+    if(self = [super init]) {
         hit = -1;
         
         double x,y,w,h;
